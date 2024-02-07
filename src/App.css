@@ -1,3 +1,57 @@
+.main-image {
+  width: 100%;
+  height: 400px; /* Adjust based on your preference */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Example breakpoints */
+@media (max-width: 768px) {
+  .main-image {
+    background-image: url('/public/logo512.png'); /* Path to your mobile image */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-image {
+    background-image: url('/public/logo192.png'); /* Path to your tablet image */
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-image {
+    background-image: url('/public/syd_side_profile.png'); /* Path to your desktop image */
+  }
+}
+
+/* Target the <nav> element directly if it's not styled yet */
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow: hidden; /* Clears floated elements, if any */
+  background-color: #333; /* Example background color */
+}
+
+nav ul li {
+  float: left; /* Positions list items horizontally */
+}
+
+nav ul li a {
+  display: block; /* Makes the entire area clickable */
+  color: white; /* Text color */
+  text-align: center; /* Centers text */
+  padding: 14px 16px; /* Adds space around the text */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+  background-color: #111; /* Darker shade on hover */
+}
+
+
+
 .App {
   text-align: center;
 }
