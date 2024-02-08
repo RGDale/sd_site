@@ -25,12 +25,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage'; // Adjust the path based on your file structure
 import AboutPage from './AboutPage'; // Adjust the path based on your file structure
 import NavBar from './ui-components/NavBar'; // Assuming you have also created a NavBar component
+import ResponsiveImageComponent from "./ui-components/ResponsiveImageComponent";
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <div className="main-image"></div>
+      <ResponsiveImageComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

@@ -1,9 +1,38 @@
-.main-image {
-  width: 100%;
-  height: 400px; /* Adjust based on your preference */
-  background-size: cover;
-  background-position: center;
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align children to the left */
 }
+
+.image-container {
+  width: 50vw; /* Image takes up half the viewport width */
+  height: 100%; /* Adjust based on your layout needs */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Adjust to maintain aspect ratio */
+  display: block; /* Ensures no extra space below the image */
+}
+
+.svg-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100vw; /* SVG covers the full viewport width */
+  height: 100vh; /* Adjust the height as needed */
+  pointer-events: none; /* Allows interaction with content underneath */
+}
+
+.svg-overlay img {
+  width: 100%;
+  height: auto; /* Adjust to maintain aspect ratio */
+}
+
+
 
 /* Example breakpoints */
 @media (max-width: 768px) {
